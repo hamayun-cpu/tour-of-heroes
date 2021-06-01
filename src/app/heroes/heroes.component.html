@@ -1,12 +1,12 @@
-<div class="m-4">
-  <h3>
-    {{ hero.name }} Details
-  </h3>
-  <p>
-    {{ hero.id }}
-  </p>
-  <p>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name">
-  </p>
+<div class="m-3">
+  <h2>
+    My Heroes
+  </h2>
+  
+  <ul>
+    <li *ngFor = "let hero of heroes">
+      <span>{{ hero.id }}</span> <br>
+      <span>{{ hero.name }}</span>
+    </li>
+  </ul>
 </div>
