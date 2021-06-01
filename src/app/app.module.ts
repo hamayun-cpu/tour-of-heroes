@@ -4,16 +4,18 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
+    HeroesComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: TopBarComponent } 
+      {path: '', component:  HeroesComponent}
     ])
   ],
   providers: [],
