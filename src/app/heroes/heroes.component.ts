@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Hero } from '../hero';
+import { Hero } from '../hero';
 import { HEROES } from '../hero-list';
 // import { HeroService } from '../hero.service'
 
@@ -11,7 +11,12 @@ import { HEROES } from '../hero-list';
 export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
+  selectedHero: Hero | undefined;
 
   constructor() { }
   ngOnInit() {}
+
+  onSelect(hero: Hero) {
+    this.selectedHero = hero;
+  }
 }
