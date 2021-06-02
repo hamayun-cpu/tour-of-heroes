@@ -1,4 +1,4 @@
-<div class="m-3">
+<div class="m-5">
   <h2>
     My Heroes
   </h2>
@@ -8,15 +8,15 @@
       {{ selectedHero.name | uppercase }} Details
     </h2>
     <div>
-      <span>{{ selectedHero.id }}</span> <br>
-      <span>{{ selectedHero.name }}</span>
+      <span>id: </span>
+      {{ selectedHero.id }}
     </div>
   </div>
   
-  <ul>
+  <ul class="heroes">
     <li *ngFor = "let hero of heroes" (click)="onSelect(hero)">
-      <span>{{ hero.id }}</span> <br>
-      <span>{{ hero.name }}</span>
+      <span class="badge">{{ hero.id }}</span>
+      {{ hero.name }}
     </li>
   </ul>
 </div>
