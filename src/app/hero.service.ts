@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Hero } from './hero';
 import { HEROES } from './hero-list';
 
 @Injectable({
@@ -7,10 +7,9 @@ import { HEROES } from './hero-list';
 })
 export class HeroService {
 
-  heroes = HEROES;
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
-  getHeroes() {
-    return this.heroes;
+  getHeroes(): Hero[] {
+    return HEROES;
   }
 }
