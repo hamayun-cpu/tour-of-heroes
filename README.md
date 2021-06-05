@@ -1,27 +1,55 @@
 # TourOfHeroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+It's an app that will allow the user to view list of Heroes and allow him to do CRUD operations on Heroes.
 
-## Development server
+## Built With
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular
+- TypeScript
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**To get started you can download the code by pressing in the top right corner on the green button**
 
-## Build
+> To get a local copy up and running follow these simple example steps.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- Npm installed on your computer
+- Node as well
+- Angular as well
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install
 
-## Running end-to-end tests
+> Once you have downloaded the code please open you terminal and paste in this code
+> `git clone https://github.com/hamayun-cpu/tour-of-heroes.git`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Usage
 
-## Further help
+> In order to run the app once you have already installed it please run these commands in your terminal
+> npm install
+> `ng serve`
+> Navigate to `http://localhost:4200/
+> this will open a new browser with the app ready to use.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Authors
+
+👤 **Hamayun Waheed**
+
+- Github: [@githubhandle](https://github.com/hamayun-cpu)
+- Twitter: [@twitterhandle](https://twitter.com/hamayun_waheed?s=09&fbclid=IwAR0rfO9cMDDeCX8LfXf4cCNQDrL4LpJ02Q2csWhcT-VtMQ0Cy9EgTB4Wq8E)
+- Linkedin: [linkedin](https://www.linkedin.com/in/hamayun-waheed-3527381b2/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/hamayun-cpu/tour-of-heroes/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
