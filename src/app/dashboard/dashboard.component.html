@@ -1,1 +1,12 @@
-<p>dashboard works!</p>
+<div class="d-flex justify-content-center">
+  <div>
+    <h3 class="text-center">Top Heroes</h3>
+    <div class="container">
+      <div class="row">
+        <div *ngFor = 'let hero of heroes' class="col-sm box mx-2">
+          <h4><a>{{hero.name}}</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
