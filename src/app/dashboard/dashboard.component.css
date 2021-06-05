@@ -1,0 +1,12 @@
+.box {
+  background-color: rgb(206, 206, 206);
+  padding: 30px;
+}
+
+.box:hover {
+  background-color: rgb(231, 231, 231);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
