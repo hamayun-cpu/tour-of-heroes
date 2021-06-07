@@ -1,7 +1,11 @@
-<div>
-  <label for="new-hero">Hero Name: </label>
-  <input id="new-hero" #heroName>
-  <button (click)="addHero(heroName.value); heroName.value=''" > ADD HERO</button>
+<div class="d-flex justify-content-center">
+  <div>
+    <h3 class="text-center my-4">Add New Hero</h3>
+    <label for="new-hero">Hero Name </label> <br>
+    <input class="border border-secondary rounded" id="new-hero" placeholder="name.." #heroName>
+    <br>
+    <button class="w-100 mt-2 btn btn-success font-weight-bold" (click)="addHero(heroName.value); heroName.value=''" > ADD HERO</button>
+  </div>
 </div>
 
 
