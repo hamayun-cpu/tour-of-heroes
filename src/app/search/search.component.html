@@ -5,12 +5,13 @@
       <div class="search">
         <input type="text" [(ngModel)]="term" class="searchTerm" placeholder="What are you looking for?">
       </div>
-  
-      <div *ngFor="let item of heroes | filter:term">
-        <a routerLink = '/detail/{{item.id}}'>
-          {{ item.name }}
-        </a>
-          
+
+      <div *ngIf="term && term.length">
+        <div *ngFor="let item of heroes | filter:term">
+          <a routerLink = '/detail/{{item.id}}'>
+            {{ item.name }}
+          </a>
+        </div>
       </div>
     </div>
   </div>
