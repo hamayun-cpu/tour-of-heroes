@@ -10,6 +10,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchComponent } from './search/search.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2SearchPipeModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
