@@ -10,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  searchTerm: string = '';
   heroes: Hero[] = [];
   term: string = '';
 
