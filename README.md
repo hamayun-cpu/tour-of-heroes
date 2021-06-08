@@ -2,10 +2,16 @@
 
 It's an app that will allow the user to view list of Heroes and allow him to do CRUD operations on Heroes.
 
+![screenshot](./src/assets/ss.jpg)
+
 ## Built With
 
 - Angular
 - TypeScript
+
+## Live Demo Link
+
+[Project live website](https://tour-of-heroes-b86ec.web.app/dashboard)
 
 ## Getting Started
 

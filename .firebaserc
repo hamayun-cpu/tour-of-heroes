@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tour-of-heroes-b86ec": {
+      "hosting": {
+        "tour-of-heroes": [
+          "tour-of-heroes-b86ec"
+        ]
+      }
+    }
+  }
+}
