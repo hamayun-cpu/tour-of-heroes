@@ -34,6 +34,12 @@
 a {
   text-decoration: none;
   color: black;
+}
+.del-button {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  color: rgb(131, 8, 8);
 } /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
