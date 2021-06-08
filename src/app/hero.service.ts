@@ -30,6 +30,7 @@ export class HeroService {
 
   delHero(hero: Hero) {
     let ind = HEROES.indexOf(hero);
+    this.messageService.add(`HeroService: Delete Hero with id: ${HEROES[ind].id}`);
     HEROES.splice(ind,1);
   }
 
