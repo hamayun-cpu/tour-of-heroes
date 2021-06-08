@@ -20,7 +20,7 @@
       <a routerLink = '/detail/{{ hero.id }}'>
         <span class="badge">{{ hero.id }}</span>  {{ hero.name }}
       </a>
-      <span class="del-button"><i class="fas fa-trash"></i></span>
+      <span (click)='delHero(hero)' class="del-button"><i class="fas fa-trash"></i></span>
     </li>
   </ul>
 </div>

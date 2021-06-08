@@ -24,4 +24,8 @@ export class HeroesComponent implements OnInit {
       this.heroService.addHero(name);
     }
   }
+
+  delHero(hero: Hero) {
+    this.heroService.delHero(hero);
+  }
 }
