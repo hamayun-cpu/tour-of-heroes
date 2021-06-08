@@ -8,6 +8,7 @@ import { MessageService } from './message.service';
   providedIn: 'root'
 })
 export class HeroService {
+  idNumber = 21;
 
   constructor(private messageService: MessageService) { }
 
@@ -27,16 +28,14 @@ export class HeroService {
     HEROES.push({name: nam, id: idd});
   }
 
+  delHero(hero: Hero) {
+    let ind = HEROES.indexOf(hero);
+    HEROES.splice(ind,1);
+  }
+
   private getId() {
-    let idd = HEROES[0].id;
-    let prev = idd;
-    for (let i = 0; i < HEROES.length; i++) { 
-      if ((HEROES[i].id - prev) > 1) {
-        idd = prev+1;
-        return idd;
-      }   
-      prev = HEROES[i].id; 
-    }
-    return HEROES[HEROES.length-1].id + 1; 
+    let num = this.idNumber;
+    this.idNumber += 1;
+    return num;
   }
 }
