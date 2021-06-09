@@ -35,7 +35,7 @@ import { LoginComponent } from './login/login.component';
     Ng2SearchPipeModule,
     HttpClientModule,
     AuthModule.forRoot({
-      ... env.auth
+      ... env.auth,
     })
   ],
   providers: [],
