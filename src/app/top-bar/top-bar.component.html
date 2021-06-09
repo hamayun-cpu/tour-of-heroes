@@ -1,4 +1,5 @@
 <app-login *ngIf = "(auth.isAuthenticated$ | async) === false"></app-login>
+<app-logout *ngIf = "(auth.isAuthenticated$ | async)"></app-logout>
 <h3 class="m-3">
   Tour of Heroes
 </h3>

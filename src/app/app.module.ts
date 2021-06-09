@@ -16,6 +16,7 @@ import { SearchComponent } from './search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     SearchComponent,
     LoginComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
