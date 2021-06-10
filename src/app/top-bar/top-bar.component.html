@@ -1,5 +1,5 @@
 <div class=" d-flex justify-content-end pr-2 mt-2">
-  <button class= "btn btn-info mr-2" routerLink = '/user'>Account Details</button>
+  <button *ngIf = "(auth.isAuthenticated$ | async)" class= "btn btn-info mr-2" routerLink = '/user'>Account Details</button>
   <app-login *ngIf = "(auth.isAuthenticated$ | async) === false"></app-login>
   <app-logout *ngIf = "(auth.isAuthenticated$ | async)"></app-logout>
 </div>
