@@ -1,6 +1,3 @@
-import { environment as common } from './environment';
-
-export const environment: any = {
-  ...common,
+export const environment = {
   production: true
 };
