@@ -13,11 +13,11 @@ export class AccessGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       this.auth.isAuthenticated$.subscribe(loginAns => this.isLoggedIn = loginAns);
-    if (!this.isLoggedIn) {
+    if (this.isLoggedIn) {
+      return true;
+    } else {
       window.alert("Only loggedIn users can view this page");
       return false;
-    } else {
-      return true;
     }
   }
 
