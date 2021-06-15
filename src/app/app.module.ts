@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UserComponent } from './user/user.component';
+import { SpinnerCircularModule } from 'spinners-angular/spinner-circular';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { UserComponent } from './user/user.component';
     AppRoutingModule,
     Ng2SearchPipeModule,
     HttpClientModule,
+    SpinnerCircularModule,
     AuthModule.forRoot({
       ...env.auth,
     })

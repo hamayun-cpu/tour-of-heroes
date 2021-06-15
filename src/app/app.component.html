@@ -1,5 +1,5 @@
 <div class="container" *ngIf = "auth.isLoading$ | async; else loaded">
-  <app-loading></app-loading>
+  <sa-spinner-circular></sa-spinner-circular>
 </div>
 
 <ng-template #loaded>
