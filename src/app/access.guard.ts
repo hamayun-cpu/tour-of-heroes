@@ -1,8 +1,8 @@
-import { UserComponent } from './user/user.component';
 import { AuthService } from '@auth0/auth0-angular';
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+import { tap } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -12,13 +12,16 @@ export class AccessGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      this.auth.isAuthenticated$.subscribe(loginAns => this.isLoggedIn = loginAns);
-    if (this.isLoggedIn) {
-      return true;
-    } else {
-      window.alert("Only loggedIn users can view this page");
-      return false;
-    }
+  
+    return this.auth.isAuthenticated$.pipe(
+      tap(loggedIn => {
+        if (!loggedIn) {
+          this.auth.loginWithRedirect();
+        }
+      }),
+    );
+
+
   }
 
   constructor(private auth: AuthService) {}
