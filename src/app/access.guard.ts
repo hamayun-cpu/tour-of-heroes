@@ -14,8 +14,7 @@ export class AccessGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       this.auth.isAuthenticated$.subscribe(loginAns => this.isLoggedIn = loginAns);
     if (!this.isLoggedIn) {
-      window.alert("You should be loggedIn to view this page");
-      // this.auth.loginWithRedirect();
+      window.alert("Only loggedIn users can view this page");
       return false;
     } else {
       return true;
