@@ -5,10 +5,15 @@
     <span>id: </span>
     {{ hero.id }}
   </div>
-  <div>
-    <label>name: 
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </label>
+  <div *ngIf="auth.user$ | async as user">
+    <div *ngIf = "user.email === 'hamayun.waheed1999@gmail.com'; else no">
+      <label>name: 
+        <input [(ngModel)]="hero.name" placeholder="name">
+      </label>
+    </div>
+    <ng-template #no>
+      <div>name: <span>{{ hero.name }}</span></div>
+    </ng-template>
   </div>
 </div>
 

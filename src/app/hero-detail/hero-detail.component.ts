@@ -1,3 +1,4 @@
+import { AuthService } from '@auth0/auth0-angular';
 import { Component, OnInit } from '@angular/core';
 import { Hero } from './../hero';
 import { ActivatedRoute } from '@angular/router';
@@ -12,7 +13,7 @@ import { HeroService } from './../hero.service';
 export class HeroDetailComponent implements OnInit {
   hero: Hero | undefined;
 
-  constructor(private route: ActivatedRoute, private heroService: HeroService, private location: Location) { }
+  constructor(private route: ActivatedRoute, private heroService: HeroService, private location: Location, public auth: AuthService) { }
 
   ngOnInit(): void {
     this.getHero();
