@@ -39,7 +39,7 @@ import { UserComponent } from './user/user.component';
     Ng2SearchPipeModule,
     HttpClientModule,
     AuthModule.forRoot({
-      ... env.auth,
+      ...env.auth,
     })
   ],
   providers: [],
