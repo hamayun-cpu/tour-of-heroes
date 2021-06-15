@@ -5,7 +5,7 @@
     </h1>
     <div *ngIf="auth.user$ | async as user">
       <div class="d-flex justify-content-center my-3">
-        <img src= {{user.picture}} class= "rounded-circle">
+        <img src= {{user.picture}} class= "rounded">
       </div>
       <div> <span class="font-weight-bold" >Name:</span> {{ user.name }}</div>
       <div> <span class="font-weight-bold">Email:</span> {{ user.email }}</div>     
